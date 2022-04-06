@@ -6,7 +6,11 @@ body {
 }
 
 .container {
-   max-width: 480px;
+   width: 1200px;
+   margin-right: auto;
+   margin-left: auto;
+   padding-right: 15px;
+   padding-left: 15px;
 }
 
 .section {
@@ -17,8 +21,9 @@ body {
 .btn {
    font-weight: 700;
    font-size: 16px;
-   line-height: 1.88;
+   line-height: 1.87;
    letter-spacing: 0.06em;
+   text-align: center;
    color: #ffffff;
 
    width: 200px;
@@ -33,10 +38,10 @@ body {
 .logo {
    font-family: 'Raleway', sans-serif;
    font-weight: 700;
-   font-size: 24px;
-   line-height: 1.167;
+   font-size: 26px;
+   line-height: 1.19;
    letter-spacing: 0.03em;
-   color: $second-text-color;
+   color: #000000;
 
    &--accent {
       color: $accent-color;
