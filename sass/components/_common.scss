@@ -3,15 +3,20 @@ body {
    color: $primary-text-color;
 
    background-color: $primary-background-color;
+
+   &.modal-open {
+      overflow: hidden;
+   }
 }
 
 .container {
    max-width: 480px;
+   margin: 0 auto;
+   padding: 0 15px;
 }
 
 .section {
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding: 60px 0;
 }
 
 .btn {

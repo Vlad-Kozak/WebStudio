@@ -23,37 +23,53 @@
       <header class="header">
          <div class="header__container container">
             <a class="logo" lang="en" href="./"><span class="logo--accent">Web</span>Studio</a>
-            <nav class="nav">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a class="nav__link active" href="./">Студия</a>
-                  </li>
-                  <li class="nav__item">
-                     <a class="nav__link" href="./portfolio.html">Портфолио</a>
-                  </li>
-                  <li class="nav__item">
-                     <a class="nav__link" href="">Контакты</a>
-                  </li>
-               </ul>
-            </nav>
-            <ul class="contacts">
-               <li class="contacts__item">
-                  <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
-                     <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                     </svg>
-                     info@devstudio.com
-                  </a>
-               </li>
-               <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+380961111111">
-                     <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-tel"></use>
-                     </svg>
-                     +38 096 111 11 11
-                  </a>
-               </li>
-            </ul>
+            <button class="menu-btn" data-menu-btn type="button" aria-expanded="false">
+               <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                  <use class="menu-btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                  <use class="menu-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+               </svg>
+            </button>
+            <div class="header__wrap" data-menu>
+               <nav class="nav">
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a class="nav__link active" href="./">Студия</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div>
+                  <ul class="contacts">
+                     <li class="contacts__item">
+                        <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
+                           <svg class="contacts__icon" width="16" height="12">
+                              <use href="./images/icons.svg#icon-mail"></use>
+                           </svg>
+                           info@devstudio.com
+                        </a>
+                     </li>
+                     <li class="contacts__item">
+                        <a class="contacts__link contacts__link--mobile" href="tel:+380961111111">
+                           <svg class="contacts__icon" width="10" height="16">
+                              <use href="./images/icons.svg#icon-tel"></use>
+                           </svg>
+                           +38 096 111 11 11
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="mob-links">
+                     <li class="mob-links__item"><a href="" class="mob-links__link">Instagram</a></li>
+                     <li class="mob-links__item"><a href="" class="mob-links__link">Twitter</a></li>
+                     <li class="mob-links__item"><a href="" class="mob-links__link">Facebook</a></li>
+                     <li class="mob-links__item"><a href="" class="mob-links__link">LinkedIn</a></li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </header>
 
@@ -494,6 +510,7 @@
             </form>
          </div>
       </div>
+      <script src="./js/menu.js"></script>
       <script src="./js/modal.js"></script>
    </body>
 </html>
