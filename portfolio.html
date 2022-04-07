@@ -23,37 +23,64 @@
       <header class="header">
          <div class="header__container container">
             <a class="logo" lang="en" href="./"><span class="logo--accent">Web</span>Studio</a>
-            <nav class="nav">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a class="nav__link" href="./">Студия</a>
-                  </li>
-                  <li class="nav__item">
-                     <a class="nav__link active" href="./portfolio.html">Портфолио</a>
-                  </li>
-                  <li class="nav__item">
-                     <a class="nav__link" href="">Контакты</a>
-                  </li>
-               </ul>
-            </nav>
-            <ul class="contacts">
-               <li class="contacts__item">
-                  <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
-                     <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-mail"></use>
-                     </svg>
-                     info@devstudio.com
-                  </a>
-               </li>
-               <li class="contacts__item">
-                  <a class="contacts__link" href="tel:+380961111111">
-                     <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-tel"></use>
-                     </svg>
-                     +38 096 111 11 11
-                  </a>
-               </li>
-            </ul>
+            <button class="menu-btn" data-menu-btn type="button" aria-expanded="false">
+               <svg
+                  class="menu-btn__icon"
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+               >
+                  <use class="menu-btn__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                  <use class="menu-btn__icon-menu" href="./images/icons.svg#icon-menu"></use>
+               </svg>
+            </button>
+            <div class="header__wrap" data-menu>
+               <nav class="nav">
+                  <ul class="nav__list">
+                     <li class="nav__item">
+                        <a class="nav__link" href="./">Студия</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link active" href="./portfolio.html">Портфолио</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="">Контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div>
+                  <ul class="contacts">
+                     <li class="contacts__item">
+                        <a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
+                           <svg class="contacts__icon" width="16" height="12">
+                              <use href="./images/icons.svg#icon-mail"></use>
+                           </svg>
+                           info@devstudio.com
+                        </a>
+                     </li>
+                     <li class="contacts__item">
+                        <a class="contacts__link contacts__link--mobile" href="tel:+380961111111">
+                           <svg class="contacts__icon" width="10" height="16">
+                              <use href="./images/icons.svg#icon-tel"></use>
+                           </svg>
+                           +38 096 111 11 11
+                        </a>
+                     </li>
+                  </ul>
+                  <ul class="mob-links">
+                     <li class="mob-links__item">
+                        <a href="" class="mob-links__link">Instagram</a>
+                     </li>
+                     <li class="mob-links__item"><a href="" class="mob-links__link">Twitter</a></li>
+                     <li class="mob-links__item">
+                        <a href="" class="mob-links__link">Facebook</a>
+                     </li>
+                     <li class="mob-links__item">
+                        <a href="" class="mob-links__link">LinkedIn</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
          </div>
       </header>
 
@@ -63,7 +90,7 @@
          <!-- Скрытый заголовок -->
          <h1 class="hidden-title">Наши работы</h1>
 
-         <section class="filter section">
+         <section class="section">
             <div class="container">
                <ul class="filter__list">
                   <li class="filter__item">
@@ -91,7 +118,6 @@
                               class="works__img"
                               src="./images/product1.jpg"
                               alt="На экране ноутбука сайт с карточками сотрудников"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -112,7 +138,6 @@
                               class="works__img"
                               src="./images/product2.jpg"
                               alt="Два баскетболиста с мячом"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -135,7 +160,6 @@
                               class="works__img"
                               src="./images/product3.jpg"
                               alt="Лого ресторана с текстом и рыбой"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -156,7 +180,6 @@
                               class="works__img"
                               src="./images/product4.jpg"
                               alt="Большие наушники"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -177,7 +200,6 @@
                               class="works__img"
                               src="./images/product5.jpg"
                               alt="Две коробки разного размера и цвета"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -198,7 +220,6 @@
                               class="works__img"
                               src="./images/product6.jpg"
                               alt="На экране карта планеты и текст"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -219,7 +240,6 @@
                               class="works__img"
                               src="./images/product7.jpg"
                               alt="Открытая книга"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -242,7 +262,6 @@
                               class="works__img"
                               src="./images/product8.jpg"
                               alt="Бирка с текстом"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -263,7 +282,6 @@
                               class="works__img"
                               src="./images/product9.jpg"
                               alt="Руки на клавиатуре ноутбука"
-                              width="370"
                            />
                            <p class="works__description">
                               Технокряк это современная площадка распространения коронавируса.
@@ -286,31 +304,29 @@
 
       <footer class="footer">
          <div class="footer__container container">
-            <div>
-               <a class="footer__logo logo" lang="en" href="./index.html">
-                  <span class="logo--accent">Web</span>Studio
-               </a>
-               <address class=".address">
-                  <ul class="address__list">
-                     <li class="address__item">
-                        <a class="address__link" href="">г. Киев, пр-т Леси Украинки, 26</a>
-                     </li>
-                     <li class="address__item">
-                        <a
-                           class="address__link address__link--grey"
-                           lang="en"
-                           href="mailto:info@example.com"
-                           >info@example.com
-                        </a>
-                     </li>
-                     <li class="address__item">
-                        <a class="address__link address__link--grey" href="tel:+380991111111"
-                           >+38 099 111 11 11
-                        </a>
-                     </li>
-                  </ul>
-               </address>
-            </div>
+            <a class="footer__logo logo" lang="en" href="./index.html">
+               <span class="logo--accent">Web</span>Studio
+            </a>
+            <address class="address">
+               <ul class="address__list">
+                  <li class="address__item">
+                     <a class="address__link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                  </li>
+                  <li class="address__item">
+                     <a
+                        class="address__link address__link--grey"
+                        lang="en"
+                        href="mailto:info@example.com"
+                        >info@example.com
+                     </a>
+                  </li>
+                  <li class="address__item">
+                     <a class="address__link address__link--grey" href="tel:+380991111111"
+                        >+38 099 111 11 11
+                     </a>
+                  </li>
+               </ul>
+            </address>
             <div class="social-links">
                <p class="social-links__text">присоединяйтесь</p>
                <ul class="social-links__list">
