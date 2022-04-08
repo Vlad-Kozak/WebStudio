@@ -18,7 +18,7 @@
 }
 
 .modal {
-   width: calc(100% - 30px);
+   width: 450px;
    padding: 40px;
 
    background-color: #ffffff;
@@ -35,6 +35,10 @@
 
    .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(0.01) perspective(600px) rotateY(90deg);
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: 528px;
    }
 }
 
@@ -70,6 +74,10 @@
    color: $second-text-color;
 
    margin-bottom: 12px;
+
+   @media screen and (min-width: 1200px) {
+      line-height: 1.15;
+   }
 }
 
 .modal__form {
@@ -156,6 +164,11 @@
    margin-right: auto;
    margin-left: auto;
    margin-bottom: 30px;
+
+   @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
 }
 
 .modal__custom-checkbox {
@@ -192,6 +205,11 @@
    color: $accent-color;
 
    margin-left: 5px;
+
+   @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
 }
 
 .modal__checkbox {

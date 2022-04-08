@@ -1,3 +1,11 @@
+.works {
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+   }
+}
+
 .works__item {
    outline: 1px solid #eeeeee;
    @include transition(box-shadow);
@@ -8,8 +16,19 @@
          1px 4px 6px rgba(0, 0, 0, 0.16);
    }
 
-   &:not(:last-child) {
-      margin-bottom: 30px;
+   @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      width: calc((100% - 6 * 15px) / 3);
    }
 }
 

@@ -28,6 +28,10 @@ body {
 
 .section {
    padding: 60px 0;
+
+   @media screen and (min-width: 1200px) {
+      padding: 94px 0;
+   }
 }
 
 .btn {
@@ -56,6 +60,11 @@ body {
 
    &--accent {
       color: $accent-color;
+   }
+
+   @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.192;
    }
 }
 

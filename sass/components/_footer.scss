@@ -3,33 +3,56 @@
    background-color: $third-background-color;
 }
 
+.footer__container {
+   @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
 .footer__logo {
    display: block;
-   width: 155px;
    margin: 0 auto 20px;
 
    text-align: center;
    color: #ffffff;
+
+   @media screen and (min-width: 1200px) {
+      display: inline-block;
+      margin: 0 0 20px 0;
+   }
 }
 
 .address {
-   margin-bottom: 60px;
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+   }
 }
 
 .address__item {
    &:not(:last-child) {
       margin-bottom: 8px;
    }
+
+   @media screen and (min-width: 1200px) {
+      &:not(:last-child) {
+         margin-bottom: 9px;
+      }
+   }
 }
 
 .address__link {
    display: block;
-   margin: 0 auto;
 
    font-style: normal;
    font-size: 14px;
    line-height: 1.171;
-   text-align: center;
    letter-spacing: 0.03em;
    color: #ffffff;
 
@@ -43,10 +66,19 @@
    &:focus {
       color: $accent-color;
    }
+
+   @media screen and (max-width: 1199px) {
+      text-align: center;
+   }
 }
 
 .social-links {
-   margin-bottom: 60px;
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+   }
 }
 
 .social-links__text {
@@ -55,10 +87,13 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.143;
-   text-align: center;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #ffffff;
+
+   @media screen and (max-width: 1199px) {
+      text-align: center;
+   }
 }
 
 .social-links__list {
@@ -93,6 +128,19 @@
    fill: #ffffff;
 }
 
+.distribution {
+   @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+   }
+}
+
+.distribution__wrap {
+   @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: flex-end;
+   }
+}
+
 .distribution__label {
    display: flex;
    flex-direction: column;
@@ -104,10 +152,13 @@
    font-weight: 700;
    font-size: 14px;
    line-height: 1.143;
-   text-align: center;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: #ffffff;
+
+   @media screen and (max-width: 1199px) {
+      text-align: center;
+   }
 }
 
 .distribution__input {
@@ -123,6 +174,15 @@
    &:hover,
    &:focus {
       border-color: $accent-color;
+   }
+
+   @media screen and (min-width: 768px) {
+      width: 450px;
+   }
+
+   @media screen and (min-width: 1200px) {
+      margin: 0 12px 0 0;
+      width: 358px;
    }
 }
 
