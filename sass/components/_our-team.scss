@@ -72,7 +72,7 @@
    height: 44px;
    border-radius: 50%;
 
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   @include transition(background-color);
 
    &:hover,
    &:focus {
@@ -83,7 +83,7 @@
 .card-links__icon {
    fill: #afb1b8;
 
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   @include transition(fill);
 
    .card-links__link:hover &,
    .card-links__link:focus & {
